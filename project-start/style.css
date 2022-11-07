@@ -1,5 +1,6 @@
 body {
     margin: auto 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .zone {
@@ -18,7 +19,20 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.box:hover {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
 /* NAV STYLES */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
 
 .main-nav {
     display: flex;
@@ -56,7 +70,11 @@ a {
     justify-content: center;
     align-items: center;
     /* this vh value below means the height will always be 50% of viewport. This is good for responsive design. */
-    height: 50vh;
+    height: 70vh;
+}
+
+.cover {
+    width: 30rem;
 }
 
 /* GRID STYLES */
